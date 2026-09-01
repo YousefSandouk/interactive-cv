@@ -116,6 +116,16 @@ export function HeroHeader() {
           <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </a>
 
+        {/* Web3 Crypto Dashboard Link */}
+        <a
+          href="/crypto"
+          className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm text-emerald-300 border border-emerald-400/40 hover:border-emerald-400/80 bg-emerald-500/10 hover:bg-emerald-500/20 active:scale-[0.98] backdrop-blur-sm transition-all duration-200 touch-manipulation shadow-lg shadow-emerald-500/10"
+        >
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
+          <span>Launch Web3 Crypto App</span>
+          <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </a>
+
         {/* Secondary: Get in Touch */}
         <a
           href="mailto:yuusifsanduk95@gmail.com"

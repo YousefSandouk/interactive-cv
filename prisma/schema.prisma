@@ -1,0 +1,42 @@
+// Prisma schema for Crypto Wallet & Portfolio Dashboard
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id            String          @id @default(uuid())
+  email         String?         @unique
+  walletAddress String?         @unique
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  favorites     UserFavorite[]
+  portfolio     PortfolioItem[]
+}
+
+model UserFavorite {
+  id        String   @id @default(uuid())
+  userId    String
+  coinId    String   // e.g. 'bitcoin', 'ethereum'
+  symbol    String   // e.g. 'BTC', 'ETH'
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, coinId])
+}
+
+model PortfolioItem {
+  id        String   @id @default(uuid())
+  userId    String
+  coinId    String
+  amount    Float
+  buyPrice  Float
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
