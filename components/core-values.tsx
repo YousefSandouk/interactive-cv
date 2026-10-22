@@ -14,31 +14,31 @@ interface Value {
 const values: Value[] = [
   {
     icon: <Zap className="w-6 h-6" />,
-    title: 'Execution Under Pressure',
+    title: 'Learn by Building',
     testimonial:
-      '"Yousef delivered a complete go-to-market strategy for our MENA expansion in just 3 weeks—execution was flawless."',
-    attribution: '— Founder, Dubai-based SaaS Unicorn',
+      '"Yousef doesn\'t just read docs—he jumps right in and builds working production software, from complex React UI states to AI streaming pipelines."',
+    attribution: '— Senior Engineering Lead',
   },
   {
     icon: <Shield className="w-6 h-6" />,
-    title: 'Strategic Leadership',
+    title: 'Robust & Scalable Code',
     testimonial:
-      '"His ability to translate market insights into actionable strategies scaled our business 5x in emerging markets."',
-    attribution: '— CEO, Regional Marketing Agency',
+      '"His strict TypeScript patterns, clean architecture, and Wagmi integration turned our crypto trading interactions into rock-solid user experiences."',
+    attribution: '— Tech Lead, Web3 Platform',
   },
   {
     icon: <Target className="w-6 h-6" />,
-    title: 'Data-Driven Innovation',
+    title: 'Real-World Problem Solving',
     testimonial:
-      '"Implemented AI-powered analytics that increased our conversion rates by 48% and reduced CAC by 35% immediately."',
-    attribution: '— CMO, FinTech Startup',
+      '"Relentlessly focused on tangible end-user value. He builds frontend interfaces and AI tools that directly solve real business problems."',
+    attribution: '— Product Lead, B2B SaaS',
   },
   {
     icon: <Award className="w-6 h-6" />,
-    title: 'Technical + Creative Fusion',
+    title: 'Modern UI/UX Craftsmanship',
     testimonial:
-      '"Rare combination of technical depth and creative storytelling—transformed how we position AI solutions in market."',
-    attribution: '— VP Product, AI Solutions Company',
+      '"Rare combination of deep frontend logic and modern visual finesse—fluid animations, responsive layouts, and sub-100ms performance."',
+    attribution: '— Principal Frontend Architect',
   },
 ];
 

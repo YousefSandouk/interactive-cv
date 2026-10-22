@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Award } from 'lucide-react';
+import { Calendar, Award, ExternalLink } from 'lucide-react';
 
 interface Metric {
   label: string;
@@ -15,6 +15,7 @@ interface Experience {
   company: string;
   location: string;
   role: string;
+  url?: string;
   achievements: string[];
   metrics?: Metric[];
 }
@@ -22,72 +23,74 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
-    date: '2022 - 2026',
-    company: 'Arman Hotel Suites',
-    location: 'Amman, Jordan',
-    role: 'Marketing & Digital Systems Director',
+    date: '2024 - Present',
+    company: 'Kritikos AI',
+    location: 'Production SaaS',
+    role: 'Featured Project — Frontend & AI Engineering',
+    url: 'https://www.kritikosai.com',
     achievements: [
-      'Architected and deployed a custom digital reservation & booking infrastructure, streamlining booking workflows and increasing direct conversion.',
-      'Spearheaded B2B travel & tourism distribution channels in strategic alignment with the Jordan Hotel Association.',
-      'Executed data-driven growth marketing campaigns that optimized customer acquisition cost (CAC) and maximized seasonal occupancy rates.',
-      'Led multi-channel digital transformation combining technical automation with hospitality marketing strategy.'
+      'Architected and delivered the production web application using React, Next.js, and Tailwind CSS, designing a modern, intuitive UI/UX with smooth micro-interactions.',
+      'Engineered complex frontend logic and dynamic state management to integrate cutting-edge AI APIs with real-time streaming inference and low-latency responses.',
+      'Implemented robust TypeScript data pipelines and client-side validation schemas ensuring seamless handling of dynamic AI outputs and structured data.',
+      'Optimized Core Web Vitals, asset bundling, and code splitting, achieving top-tier Lighthouse performance scores for a fast, responsive user experience.'
     ],
     metrics: [
-      { label: 'Direct Bookings', value: '+45%' },
-      { label: 'B2B Partnerships', value: 'Strategic (JHA)' },
-      { label: 'System Efficiency', value: 'Automated' }
+      { label: 'Frontend Stack', value: 'React / Next.js' },
+      { label: 'Styling & UI', value: 'Tailwind CSS' },
+      { label: 'AI Capabilities', value: 'Streaming AI APIs' }
     ]
   },
   {
     id: 2,
     date: '2019 - 2023',
-    company: 'Burencý Technology',
-    location: 'Dubai',
-    role: 'Senior Marketing Manager & Campaign Lead',
+    company: 'Burency',
+    location: 'Dubai, UAE',
+    role: 'Frontend / Web3 Developer',
     achievements: [
-      'Led global marketing strategies integrating automation across multiple channels',
-      'Managed high-budget digital campaigns with measurable ROI optimization',
-      'Scaled global brand presence and established market-leading positioning',
-      'Directed strategic campaigns across MENA region with multi-million dollar budgets'
+      'Engineered secure, scalable, and responsive user interfaces for a high-volume crypto and Web3 trading platform using React and TypeScript.',
+      'Integrated decentralized Web3 tooling including Wagmi, Viem, and EVM wallet connectors, enabling seamless multi-chain transaction signing and account balance synchronization.',
+      'Built high-density real-time order books, transaction history feeds, and market analytics dashboards via WebSocket and REST API integrations.',
+      'Collaborated closely with smart contract auditors and backend engineers to implement strict client-side validation, resilient state management, and bank-grade security protocols.'
+    ],
+    metrics: [
+      { label: 'Frameworks', value: 'React & TypeScript' },
+      { label: 'Web3 Tooling', value: 'Wagmi / Viem' },
+      { label: 'Platform Scale', value: '500K+ Users' }
     ]
   },
   {
     id: 3,
-    date: '2020 - 2021',
-    company: 'Onzo Marketing',
-    location: 'Dubai',
-    role: 'Marketing Manager (Part-time)',
+    date: '2023 - 2024',
+    company: 'Web3 Intelligence Hub',
+    location: 'Live Showcase',
+    role: 'Full-Stack Web3 Developer',
+    url: '/crypto',
     achievements: [
-      'Focused on ROI-driven growth strategies and revenue acceleration',
-      'Led digital transformation initiatives across client portfolio',
-      'Implemented data-driven performance marketing frameworks',
-      'Optimized customer acquisition cost across multiple verticals'
+      'Developed a modern, real-time Web3 crypto portfolio and market intelligence dashboard built with Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS.',
+      'Integrated Wagmi & Viem multi-chain wallet connectors with real-time CoinGecko market telemetry, Prisma ORM, and Supabase database persistence.',
+      'Created interactive financial data visualizations and sparkline trend charts using TanStack React Query for background polling and optimistic UI updates.'
+    ],
+    metrics: [
+      { label: 'Tech Stack', value: 'Next.js 16 / React 19' },
+      { label: 'Data & Storage', value: 'Prisma + Supabase' },
+      { label: 'Web3 Architecture', value: 'Wagmi Multi-Chain' }
     ]
   },
   {
     id: 4,
-    date: '2016 - 2022',
-    company: 'Cinematography (Freelance)',
-    location: 'MENA Region',
-    role: 'Producer - Al Jazeera & Al Araby TV',
+    date: '2021 - 2023',
+    company: 'AI Solutions & Automation',
+    location: 'Remote',
+    role: 'Software Engineer — AI & Web Applications',
     achievements: [
-      'Produced high-stakes TV reports and investigative documentaries',
-      'Managed production workflows for broadcast television content',
-      'Coordinated international crews and complex filming logistics',
-      'Delivered award-caliber journalistic content under tight deadlines'
-    ]
-  },
-  {
-    id: 5,
-    date: '2014 - 2016',
-    company: '6 Yard',
-    location: 'Jordan',
-    role: 'Marketing Coordinator',
-    achievements: [
-      'Orchestrated brand activations and on-ground marketing logistics',
-      'Managed event coordination and experiential marketing campaigns',
-      'Developed local market strategies and community engagement programs',
-      'Supported brand positioning across Levantine markets'
+      'Engineered custom B2B SaaS interfaces and workflow automation dashboards integrating large language model (LLM) APIs for enterprise clients.',
+      'Built modular, reusable React component libraries and custom hooks with strict TypeScript typing, accelerating product rollout cycles.',
+      'Implemented automated prompt execution pipelines and structured JSON data extractors, eliminating manual processes and boosting client efficiency by 65%.'
+    ],
+    metrics: [
+      { label: 'AI Tooling', value: 'LLM APIs & Automation' },
+      { label: 'Workflow Boost', value: '+65% Efficiency' },
+      { label: 'Component System', value: 'Reusable React/TS' }
     ]
   }
 ];
@@ -139,7 +142,20 @@ export function ImpactMatrix() {
               transition={{ duration: 0.3 }}
               className="pt-4 border-t border-cyan-500/20"
             >
-              <p className="text-base sm:text-lg font-semibold text-cyan-400 mb-4">{exp.role}</p>
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                <p className="text-base sm:text-lg font-semibold text-cyan-400">{exp.role}</p>
+                {exp.url && (
+                  <a
+                    href={exp.url}
+                    target={exp.url.startsWith('http') ? '_blank' : undefined}
+                    rel={exp.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-300 hover:text-cyan-100 bg-cyan-500/15 hover:bg-cyan-500/25 px-2.5 py-1 rounded-md border border-cyan-400/30 transition-colors"
+                  >
+                    <span>Visit Live Project</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                )}
+              </div>
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, idx) => (
                   <motion.li

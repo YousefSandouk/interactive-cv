@@ -7,10 +7,10 @@ import { FileDown, ArrowUpRight, MessageCircle } from 'lucide-react'
 import profilePic from '@/app/profile.jpg'
 
 const roles = [
-  'Growth Marketing Manager',
-  'AI Solutions Architect',
-  'Technical Strategist',
-  'Digital Innovation Leader',
+  'Software Engineer',
+  'Frontend & Web3 Developer',
+  'React & TypeScript Specialist',
+  'AI Solutions Builder',
 ]
 
 export function HeroHeader() {
@@ -72,17 +72,17 @@ export function HeroHeader() {
       >
         <div className="w-2.5 h-2.5 bg-green-400 rounded-full pulse-glow flex-shrink-0"></div>
         <span className="text-xs md:text-sm text-slate-300">
-          Open for Strategic Opportunities
+          Open for Software Engineer Opportunities
         </span>
       </motion.div>
 
       <motion.p
-        className="text-xs sm:text-sm md:text-base text-slate-400 max-w-xl mx-auto mb-8 text-pretty"
+        className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl mx-auto mb-8 text-pretty leading-relaxed"
         initial={false}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        Driving transformational growth through data-driven strategy, cutting-edge AI solutions, and technical leadership
+        Passionate Software Engineer enthusiastic about AI and Web3, eager to learn by building, and focused on developing interfaces and tools that solve real-world problems.
       </motion.p>
 
       {/* CTA Buttons — stack on mobile, row on md+ */}
@@ -92,6 +92,28 @@ export function HeroHeader() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.6 }}
       >
+        {/* Featured Project: Kritikos AI */}
+        <a
+          href="https://www.kritikosai.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm text-cyan-300 border border-cyan-400/40 hover:border-cyan-400/80 bg-cyan-500/10 hover:bg-cyan-500/20 active:scale-[0.98] backdrop-blur-sm transition-all duration-200 touch-manipulation shadow-lg shadow-cyan-500/15"
+        >
+          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse flex-shrink-0" />
+          <span>Featured: Kritikos AI</span>
+          <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </a>
+
+        {/* Web3 Crypto Dashboard Link */}
+        <a
+          href="/crypto"
+          className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm text-emerald-300 border border-emerald-400/40 hover:border-emerald-400/80 bg-emerald-500/10 hover:bg-emerald-500/20 active:scale-[0.98] backdrop-blur-sm transition-all duration-200 touch-manipulation shadow-lg shadow-emerald-500/10"
+        >
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
+          <span>Launch Web3 Crypto App</span>
+          <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </a>
+
         {/* Primary: Download CV */}
         <a
           href="https://docs.google.com/document/d/1gIoRplbw4b5ef1ZVdzHh00rOxSuOlHShMspEWLo6wjE/edit?usp=sharing"
@@ -113,16 +135,6 @@ export function HeroHeader() {
         >
           <MessageCircle className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:scale-110" />
           <span>Chat on WhatsApp</span>
-          <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-        </a>
-
-        {/* Web3 Crypto Dashboard Link */}
-        <a
-          href="/crypto"
-          className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm text-emerald-300 border border-emerald-400/40 hover:border-emerald-400/80 bg-emerald-500/10 hover:bg-emerald-500/20 active:scale-[0.98] backdrop-blur-sm transition-all duration-200 touch-manipulation shadow-lg shadow-emerald-500/10"
-        >
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse flex-shrink-0" />
-          <span>Launch Web3 Crypto App</span>
           <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </a>
 

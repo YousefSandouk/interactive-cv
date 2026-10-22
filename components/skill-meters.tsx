@@ -17,27 +17,27 @@ interface SkillGroup {
 
 const skillGroups: SkillGroup[] = [
   {
-    category: 'Development',
+    category: 'Core Frontend & React',
     skills: [
-      { name: 'React', level: 95, description: 'Modern component architecture & hooks' },
-      { name: 'Node.js', level: 90, description: 'Full-stack backend development' },
-      { name: 'Tailwind CSS', level: 95, description: 'Responsive UI design & theming' },
+      { name: 'React & Next.js', level: 96, description: 'Modern component architecture, hooks, Server Components & App Router' },
+      { name: 'TypeScript', level: 95, description: 'Type-safe interfaces, generics, strict type checking & scalable architectures' },
+      { name: 'Tailwind CSS', level: 95, description: 'Responsive design systems, micro-animations & Radix UI primitives' },
     ]
   },
   {
-    category: 'AI & Automation',
+    category: 'AI & Engineering',
     skills: [
-      { name: 'Google AI Models', level: 88, description: 'AI model integration & optimization' },
-      { name: 'Training & Fine-tuning', level: 85, description: 'Custom model training workflows' },
-      { name: 'LLM Integration', level: 90, description: 'Large language model API implementation' },
+      { name: 'AI API Integration', level: 92, description: 'OpenAI, Gemini & Anthropic streaming APIs with low-latency client handling' },
+      { name: 'LLM Orchestration', level: 90, description: 'Structured JSON outputs, function calling, embeddings & agentic tools' },
+      { name: 'B2B SaaS Architecture', level: 92, description: 'High-performance workflows, client-side validation & clean UX' },
     ]
   },
   {
-    category: 'Creative & Production',
+    category: 'Web3 & Full-Stack',
     skills: [
-      { name: 'Premiere Pro', level: 92, description: 'Video editing & post-production' },
-      { name: 'Illustrator', level: 88, description: 'Vector design & brand assets' },
-      { name: 'Photoshop', level: 90, description: 'Photo editing & digital art' },
+      { name: 'Wagmi & Viem', level: 92, description: 'EVM multi-chain wallet connections, on-chain reads/writes & Web3 state' },
+      { name: 'API Integrations & State', level: 94, description: 'REST, GraphQL, WebSockets & TanStack React Query cache synchronization' },
+      { name: 'Node.js & Databases', level: 88, description: 'Prisma ORM, Supabase, PostgreSQL & robust backend integration' },
     ]
   }
 ];

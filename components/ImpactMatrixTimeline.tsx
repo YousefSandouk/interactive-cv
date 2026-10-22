@@ -10,6 +10,7 @@ interface Experience {
   company: string
   location?: string
   role: string
+  url?: string
   achievements: string[]
   metrics: {
     label: string
@@ -20,68 +21,74 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: '1',
-    year: '2022 - 2026',
-    company: 'Arman Hotel Suites',
-    location: 'Amman, Jordan',
-    role: 'Marketing & Digital Systems Director',
+    year: '2024 - Present',
+    company: 'Kritikos AI',
+    location: 'Production SaaS',
+    role: 'Featured Project — Frontend & AI Engineering',
+    url: 'https://www.kritikosai.com',
     achievements: [
-      'Architected and deployed a custom digital reservation & booking infrastructure, streamlining booking workflows and increasing direct conversion.',
-      'Spearheaded B2B travel & tourism distribution channels in strategic alignment with the Jordan Hotel Association.',
-      'Executed data-driven growth marketing campaigns that optimized customer acquisition cost (CAC) and maximized seasonal occupancy rates.',
-      'Led multi-channel digital transformation combining technical automation with hospitality marketing strategy.'
+      'Architected and delivered the production web application using React, Next.js, and Tailwind CSS, designing a modern, intuitive UI/UX with smooth micro-interactions.',
+      'Engineered complex frontend logic and dynamic state management to integrate cutting-edge AI APIs with real-time streaming inference and low-latency responses.',
+      'Implemented robust TypeScript data pipelines and client-side validation schemas ensuring seamless handling of dynamic AI outputs and structured data.',
+      'Optimized Core Web Vitals, asset bundling, and code splitting, achieving top-tier Lighthouse performance scores for a fast, responsive user experience.'
     ],
     metrics: [
-      { label: 'Direct Bookings', value: '+45%' },
-      { label: 'B2B Partnerships', value: 'Strategic (JHA)' },
-      { label: 'System Efficiency', value: 'Automated' }
+      { label: 'Frontend Stack', value: 'React / Next.js' },
+      { label: 'Styling & UI', value: 'Tailwind CSS' },
+      { label: 'AI Capabilities', value: 'Streaming AI APIs' }
     ]
   },
   {
     id: '2',
-    year: '2019',
-    company: 'Burencý',
-    role: 'Growth Marketing Manager',
+    year: '2019 - 2023',
+    company: 'Burency',
+    location: 'Dubai, UAE',
+    role: 'Frontend / Web3 Developer',
     achievements: [
-      'Scaled user base from 10K to 500K in 18 months',
-      'Implemented custom automation workflows reducing manual work by 80%',
-      'Built integrated marketing funnel across Web3 and traditional channels'
+      'Engineered secure, scalable, and responsive user interfaces for a high-volume crypto and Web3 trading platform using React and TypeScript.',
+      'Integrated decentralized Web3 tooling including Wagmi, Viem, and EVM wallet connectors, enabling seamless multi-chain transaction signing and account balance synchronization.',
+      'Built high-density real-time order books, transaction history feeds, and market analytics dashboards via WebSocket and REST API integrations.',
+      'Collaborated closely with smart contract auditors and backend engineers to implement strict client-side validation, resilient state management, and bank-grade security protocols.'
     ],
     metrics: [
-      { label: 'Users Added', value: '490K' },
-      { label: 'Growth Rate', value: '4900%' },
-      { label: 'Automation Saved', value: '2400 hrs/yr' }
+      { label: 'Frameworks', value: 'React & TypeScript' },
+      { label: 'Web3 Tooling', value: 'Wagmi / Viem' },
+      { label: 'Platform Scale', value: '500K+ Users' }
     ]
   },
   {
     id: '3',
-    year: '2021',
-    company: 'AI Ventures',
-    role: 'AI Solutions Architect',
+    year: '2023 - 2024',
+    company: 'Web3 Intelligence Hub',
+    location: 'Live Showcase',
+    role: 'Full-Stack Web3 Developer',
+    url: '/crypto',
     achievements: [
-      'Architected end-to-end AI integration platform for enterprise clients',
-      'Reduced implementation time by 65% through custom frameworks',
-      'Led technical strategy for 15+ Fortune 500 client partnerships'
+      'Developed a modern, real-time Web3 crypto portfolio and market intelligence dashboard built with Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS.',
+      'Integrated Wagmi & Viem multi-chain wallet connectors with real-time CoinGecko market telemetry, Prisma ORM, and Supabase database persistence.',
+      'Created interactive financial data visualizations and sparkline trend charts using TanStack React Query for background polling and optimistic UI updates.'
     ],
     metrics: [
-      { label: 'Clients Onboarded', value: '15+' },
-      { label: 'Time Reduced', value: '65%' },
-      { label: 'Revenue Impact', value: '$2.5M' }
+      { label: 'Tech Stack', value: 'Next.js 16 / React 19' },
+      { label: 'Data & Storage', value: 'Prisma + Supabase' },
+      { label: 'Web3 Architecture', value: 'Wagmi Multi-Chain' }
     ]
   },
   {
     id: '4',
-    year: '2023',
-    company: 'Strategy Labs',
-    role: 'Technical Strategist',
+    year: '2021 - 2023',
+    company: 'AI Solutions & Automation',
+    location: 'Remote',
+    role: 'Software Engineer — AI & Web Applications',
     achievements: [
-      'Developed strategic frameworks bridging tech and business',
-      'Mentored 25+ startups through growth acceleration program',
-      'Established market-leading positioning for 8 tech companies'
+      'Engineered custom B2B SaaS interfaces and workflow automation dashboards integrating large language model (LLM) APIs for enterprise clients.',
+      'Built modular, reusable React component libraries and custom hooks with strict TypeScript typing, accelerating product rollout cycles.',
+      'Implemented automated prompt execution pipelines and structured JSON data extractors, eliminating manual processes and boosting client efficiency by 65%.'
     ],
     metrics: [
-      { label: 'Companies Mentored', value: '25+' },
-      { label: 'Market Leaders', value: '8' },
-      { label: 'Portfolio Value', value: '$500M' }
+      { label: 'AI Tooling', value: 'LLM APIs & Automation' },
+      { label: 'Workflow Boost', value: '+65% Efficiency' },
+      { label: 'Component System', value: 'Reusable React/TS' }
     ]
   }
 ]

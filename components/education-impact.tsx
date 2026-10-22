@@ -1,26 +1,26 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Heart } from 'lucide-react';
+import { Award, BookOpen, Heart, Code2 } from 'lucide-react';
 
 const educationImpact = [
   {
-    icon: BookOpen,
-    title: 'Diploma in Filmmaking & Digital Marketing',
-    detail: 'SAE Amman',
-    description: 'Comprehensive training in production, post-production, and digital marketing strategy',
+    icon: Code2,
+    title: 'Continuous Software Engineering & Systems',
+    detail: 'Modern React, TypeScript & AI Systems',
+    description: 'Relentless hands-on builder mastering production React ecosystems, Web3 protocols, and scalable AI API integrations',
   },
   {
     icon: Heart,
-    title: 'Humanitarian Volunteer',
-    detail: '5 Years with Atlantic Humanitarian Relief',
-    description: 'Coordinated relief operations and community outreach programs across MENA region',
+    title: 'Open Source & Humanitarian Engineering',
+    detail: '5 Years Volunteer & Community Builder',
+    description: 'Coordinated relief operations, tech initiatives, and built open-source developer showcases for real-world impact',
   },
   {
     icon: Award,
-    title: 'Industry Recognition',
-    detail: 'Growth Marketing & AI Strategy',
-    description: 'Proven expertise in scaling ventures and implementing cutting-edge marketing technology',
+    title: 'Engineering Recognition',
+    detail: 'B2B SaaS & Web3 Application Delivery',
+    description: 'Demonstrated track record of delivering resilient, type-safe frontend architectures that solve complex business workflows',
   },
 ];
 

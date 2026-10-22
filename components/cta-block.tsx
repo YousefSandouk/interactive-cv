@@ -13,16 +13,18 @@ export function CTABlock() {
     >
       <div className="flex-1 flex flex-col justify-center gap-5 sm:gap-6">
         <div className="space-y-2 sm:space-y-3 text-center md:text-left">
-          <h2 className="text-xl md:text-2xl font-bold text-white">Ready to Transform?</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white">Let&apos;s Build Together</h2>
           <p className="text-xs sm:text-sm text-gray-400 text-pretty">
-            Let&apos;s discuss how AI-powered strategy can drive growth for your organization.
+            Ready to bring deep React, TypeScript, AI, and Web3 engineering capabilities to your team.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
-          {/* Request Case Study Button */}
+          {/* View Featured Project Button */}
           <motion.a
-            href="mailto:yuusifsanduk95@gmail.com?subject=Request%20AI%20Case%20Study"
+            href="https://www.kritikosai.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="cyber-border group relative px-4 py-3.5 sm:px-5 sm:py-4 rounded-lg bg-cyan-500/10 text-cyan-400 font-semibold text-xs sm:text-sm transition-all overflow-hidden flex items-center justify-center cursor-pointer touch-manipulation active:scale-[0.98]"
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
@@ -32,7 +34,7 @@ export function CTABlock() {
           >
             <div className="flex items-center justify-center gap-2 relative z-10">
               <FileText className="w-4 h-4 flex-shrink-0" />
-              <span>Request AI Case Study</span>
+              <span>Explore Kritikos AI</span>
             </div>
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100"
@@ -40,9 +42,9 @@ export function CTABlock() {
             />
           </motion.a>
 
-          {/* Schedule Discussion Button */}
+          {/* Schedule Interview Button */}
           <motion.a
-            href="mailto:yuusifsanduk95@gmail.com?subject=Schedule%20Strategy%20Discussion"
+            href="mailto:yuusifsanduk95@gmail.com?subject=Software%20Engineer%20Opportunity%20-%20Interview"
             className="cyber-border group relative px-4 py-3.5 sm:px-5 sm:py-4 rounded-lg bg-cyan-500/10 text-cyan-400 font-semibold text-xs sm:text-sm transition-all overflow-hidden flex items-center justify-center cursor-pointer touch-manipulation active:scale-[0.98]"
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
@@ -52,7 +54,7 @@ export function CTABlock() {
           >
             <div className="flex items-center justify-center gap-2 relative z-10">
               <Calendar className="w-4 h-4 flex-shrink-0" />
-              <span>Schedule Discussion</span>
+              <span>Schedule Tech Chat</span>
             </div>
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-transparent opacity-0 group-hover:opacity-100"
@@ -85,7 +87,7 @@ export function CTABlock() {
 
         {/* Contact info & Social Proof */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] sm:text-xs text-gray-500 border-t border-white/10 pt-3.5 sm:pt-4 text-center sm:text-left">
-          <p>Join 100+ companies transforming their growth strategy</p>
+          <p>Available for Software Engineer roles • React, TypeScript, AI & Web3</p>
           <a
             href="mailto:yuusifsanduk95@gmail.com"
             className="text-cyan-400 hover:underline font-medium transition-colors"

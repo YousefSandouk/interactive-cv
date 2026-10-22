@@ -2,20 +2,20 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp } from 'lucide-react';
+import { Cpu } from 'lucide-react';
 
-const markets = ['Saudi Arabia', 'UAE', 'Global'];
-const industries = ['SaaS', 'FinTech', 'E-commerce', 'Healthcare'];
+const markets = ['B2B SaaS', 'Web3 / DeFi', 'AI Platforms'];
+const industries = ['React & Next.js', 'TypeScript Core', 'AI Streaming', 'Wagmi / Viem'];
 
 export function AIStrategyPlayground() {
-  const [market, setMarket] = useState('Saudi Arabia');
-  const [industry, setIndustry] = useState('SaaS');
+  const [market, setMarket] = useState('B2B SaaS');
+  const [industry, setIndustry] = useState('React & Next.js');
   const [budget, setBudget] = useState(50);
 
   // Mock KPI calculations
-  const roi = Math.round(150 + budget * 1.5 + (market === 'Global' ? 30 : 0));
-  const cac = Math.max(10, 100 - budget / 2);
-  const conversionRate = (budget / 100) * 8 + (industry === 'FinTech' ? 2 : 0);
+  const roi = Math.round(94 + (budget / 10) * 0.5 + (market === 'AI Platforms' ? 3 : 0));
+  const cac = Math.max(18, Math.round(48 - budget / 5));
+  const conversionRate = +((budget / 100) * 4 + 96).toFixed(1);
 
   return (
     <motion.div
@@ -25,8 +25,8 @@ export function AIStrategyPlayground() {
       transition={{ duration: 0.6 }}
     >
       <div className="flex items-center gap-2 mb-6">
-        <TrendingUp className="w-5 h-5 text-cyan-400" />
-        <h2 className="text-xl md:text-2xl font-bold text-white">AI Strategy Playground</h2>
+        <Cpu className="w-5 h-5 text-cyan-400" />
+        <h2 className="text-xl md:text-2xl font-bold text-white">AI & Systems Simulator</h2>
       </div>
 
       <div className="space-y-5 sm:space-y-6 flex-1">

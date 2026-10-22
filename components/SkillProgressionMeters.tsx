@@ -10,12 +10,12 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'React', level: 95, category: 'Frontend' },
-  { name: 'Node.js', level: 90, category: 'Backend' },
-  { name: 'Growth Hacking', level: 98, category: 'Marketing' },
-  { name: 'Digital Strategy', level: 96, category: 'Strategy' },
-  { name: 'TypeScript', level: 92, category: 'Frontend' },
-  { name: 'System Design', level: 88, category: 'Backend' },
+  { name: 'React & Next.js', level: 96, category: 'Frontend' },
+  { name: 'TypeScript', level: 95, category: 'Frontend' },
+  { name: 'Wagmi & Viem (Web3)', level: 92, category: 'Web3' },
+  { name: 'AI APIs & Streaming', level: 92, category: 'AI Engineering' },
+  { name: 'Tailwind CSS & Radix UI', level: 94, category: 'UI / UX' },
+  { name: 'Node.js & Supabase', level: 88, category: 'Backend' },
 ]
 
 export function SkillMeters() {

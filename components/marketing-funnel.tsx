@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Filter } from 'lucide-react';
+import { Layers } from 'lucide-react';
 
 interface FunnelStage {
   label: string;
@@ -11,10 +11,10 @@ interface FunnelStage {
 }
 
 const stages: FunnelStage[] = [
-  { label: 'Awareness', tooltip: 'Initial brand discovery through digital channels', percentage: 100 },
-  { label: 'Interest', tooltip: 'Engaged audience exploring core offerings', percentage: 75 },
-  { label: 'Consideration', tooltip: 'Decision-makers evaluating solutions', percentage: 58 },
-  { label: 'Conversion', tooltip: 'Committed clients implementing strategy', percentage: 42 },
+  { label: 'Architecture & Schema', tooltip: 'Modular component hierarchy, TypeScript domain models & API contract definitions', percentage: 100 },
+  { label: 'Frontend & Web3 Systems', tooltip: 'React 19, Next.js App Router, Wagmi/Viem on-chain state & responsive UX', percentage: 84 },
+  { label: 'AI & API Integration', tooltip: 'Streaming LLM responses, structured JSON outputs, resilient RPC caching & state sync', percentage: 68 },
+  { label: 'Quality & Optimization', tooltip: 'Strict type validation, sub-100ms INP, Core Web Vitals & automated CI/CD checks', percentage: 52 },
 ];
 
 export function MarketingFunnel() {
@@ -29,8 +29,8 @@ export function MarketingFunnel() {
     >
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
-          <Filter className="w-5 h-5 text-cyan-400" />
-          <h2 className="text-xl md:text-2xl font-bold text-white">Marketing Funnel</h2>
+          <Layers className="w-5 h-5 text-cyan-400" />
+          <h2 className="text-xl md:text-2xl font-bold text-white">Engineering Pipeline</h2>
         </div>
         <span className="text-[10px] text-cyan-400/80 md:hidden font-medium">Tap stage to inspect</span>
       </div>

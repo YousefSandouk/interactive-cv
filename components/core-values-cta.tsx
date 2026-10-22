@@ -7,27 +7,27 @@ import { Heart, Zap, Target, Users, Shield, Lightbulb, ArrowRight } from 'lucide
 const coreValues = [
   {
     icon: Zap,
-    title: 'High-Pressure Delivery',
-    description: 'Thriving under pressure to deliver exceptional results',
-    testimonial: 'Yousef consistently delivered critical projects on time',
+    title: 'Learn by Building',
+    description: 'Rapidly shipping working production code from ideas to reality',
+    testimonial: 'Yousef turns complex technical concepts into robust software at incredible speed',
   },
   {
     icon: Target,
-    title: 'Strategic Leadership',
-    description: 'Leading teams with clear vision and actionable strategy',
-    testimonial: 'His strategic thinking transformed our business model',
+    title: 'Real-World Problem Solving',
+    description: 'Designing frontend tools that directly eliminate workflow friction',
+    testimonial: 'Laser-focused on user experience and delivering practical business value',
   },
   {
     icon: Users,
-    title: 'Team Empowerment',
-    description: 'Building and mentoring high-performing teams',
-    testimonial: 'Best mentor I&apos;ve worked with in my career',
+    title: 'Clean Architecture & Collaboration',
+    description: 'Writing maintainable TypeScript and mentoring fellow developers',
+    testimonial: 'Champion for clean code, type safety, and collaborative engineering',
   },
   {
     icon: Shield,
-    title: 'Trust & Reliability',
-    description: 'Being a dependable partner through challenges',
-    testimonial: 'He&apos;s someone you can truly rely on',
+    title: 'Reliability & Scale',
+    description: 'Building resilient Web3 and AI systems with zero-downtime tolerance',
+    testimonial: 'He engineers secure, scalable interfaces that users can genuinely depend on',
   },
 ]
 

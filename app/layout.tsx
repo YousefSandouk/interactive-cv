@@ -3,8 +3,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Yousef Mohammad Sandouk - Interactive Digital Dossier',
-  description: 'Interactive CV showcasing growth marketing expertise, AI solutions, and technical strategy',
+  title: 'Yousef Mohammad Sandouk - Software Engineer | Frontend, Web3 & AI',
+  description: 'Software Engineer portfolio showcasing React, TypeScript, AI tools integration, and Web3 application engineering.',
   generator: 'v0.app',
   icons: {
     icon: [

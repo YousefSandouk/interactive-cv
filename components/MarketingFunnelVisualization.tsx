@@ -12,34 +12,28 @@ interface FunnelStage {
 
 const funnelStages: FunnelStage[] = [
   {
-    name: 'Awareness',
+    name: 'Architecture & Schema',
     percentage: 100,
-    strategy: 'Content marketing, paid ads, SEO optimization',
-    metrics: ['1M monthly impressions', 'Multi-channel reach']
+    strategy: 'Modular component design, TypeScript domain models & API schema contract definitions',
+    metrics: ['Strict TypeScript', 'Zero Any Policy', 'Modular Clean Code']
   },
   {
-    name: 'Interest',
-    percentage: 45,
-    strategy: 'Personalized email campaigns, retargeting',
-    metrics: ['4.2% open rate', '2.8% CTR']
+    name: 'Frontend & Web3 Systems',
+    percentage: 84,
+    strategy: 'React 19, Next.js App Router, Wagmi/Viem multi-chain EVM wallet state & responsive UI',
+    metrics: ['React 19 / Next.js', 'Wagmi & Viem', 'Responsive UI']
   },
   {
-    name: 'Consideration',
-    percentage: 28,
-    strategy: 'Case studies, product demos, webinars',
-    metrics: ['65% engagement', 'High-intent users']
+    name: 'AI & API Integration',
+    percentage: 68,
+    strategy: 'Streaming LLM responses, structured JSON outputs, resilient RPC caching & state sync',
+    metrics: ['Sub-second Streaming', 'TanStack Query', 'Real-time WebSockets']
   },
   {
-    name: 'Conversion',
-    percentage: 12,
-    strategy: 'Optimized checkout, limited-time offers',
-    metrics: ['18% conversion rate', '3.2x ROAS']
-  },
-  {
-    name: 'Retention',
-    percentage: 9,
-    strategy: 'Community building, customer success programs',
-    metrics: ['92% retention', 'High NPS: 72']
+    name: 'Quality & Optimization',
+    percentage: 52,
+    strategy: 'Strict type validation, sub-100ms INP, Core Web Vitals & automated CI/CD checks',
+    metrics: ['99.9% Type Safety', 'Sub-100ms INP', '100% Lighthouse']
   }
 ]
 
@@ -58,7 +52,7 @@ export function MarketingFunnel() {
 
       <div className="relative z-10">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-xl md:text-2xl font-bold text-white">Marketing Funnel</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-white">Engineering Pipeline</h2>
           <span className="text-[10px] text-cyan-400/80 md:hidden font-medium">Tap to view details</span>
         </div>
 
