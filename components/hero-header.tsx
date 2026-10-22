@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { FileDown, ArrowUpRight, MessageCircle } from 'lucide-react'
+import { ArrowUpRight, MessageCircle } from 'lucide-react'
 import profilePic from '@/app/profile.jpg'
 
 const roles = [
@@ -114,21 +114,9 @@ export function HeroHeader() {
           <ArrowUpRight className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
         </a>
 
-        {/* Primary: Download CV */}
-        <a
-          href="https://docs.google.com/document/d/1gIoRplbw4b5ef1ZVdzHh00rOxSuOlHShMspEWLo6wjE/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm text-black bg-cyan-400 hover:bg-cyan-300 active:scale-[0.98] transition-all duration-200 shadow-[0_0_24px_rgba(0,245,255,0.45)] hover:shadow-[0_0_36px_rgba(0,245,255,0.65)] touch-manipulation"
-        >
-          <FileDown className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-hover:-translate-y-0.5" />
-          <span>Download Official CV</span>
-          <span className="hidden sm:inline text-black/60 font-normal">(Google Doc)</span>
-        </a>
-
         {/* WhatsApp: Chat on WhatsApp */}
         <a
-          href="https://wa.me/60146354792"
+          href="https://wa.me/60109664802"
           target="_blank"
           rel="noopener noreferrer"
           className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 sm:px-6 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm text-cyan-400 border border-cyan-400/40 hover:border-cyan-400/80 bg-cyan-400/10 hover:bg-cyan-400/20 active:scale-[0.98] backdrop-blur-sm transition-all duration-200 touch-manipulation"
