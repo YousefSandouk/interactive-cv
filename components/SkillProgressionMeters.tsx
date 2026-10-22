@@ -2,20 +2,39 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import {
+  CodeXml,
+  Palette,
+  Braces,
+  Terminal,
+  Atom,
+  FileCode,
+  Layers,
+  Cpu,
+  Link as LinkIcon,
+  Server,
+  type LucideIcon,
+} from 'lucide-react'
 
 interface Skill {
   name: string
   level: number
   category: string
+  badge?: string
+  icon?: LucideIcon
 }
 
 const skills: Skill[] = [
-  { name: 'React & Next.js', level: 96, category: 'Frontend' },
-  { name: 'TypeScript', level: 95, category: 'Frontend' },
-  { name: 'Wagmi & Viem (Web3)', level: 92, category: 'Web3' },
-  { name: 'AI APIs & Streaming', level: 92, category: 'AI Engineering' },
-  { name: 'Tailwind CSS & Radix UI', level: 94, category: 'UI / UX' },
-  { name: 'Node.js & Supabase', level: 88, category: 'Backend' },
+  { name: 'HTML', level: 98, category: 'Frontend', badge: 'Expertise', icon: CodeXml },
+  { name: 'CSS', level: 96, category: 'Frontend', badge: 'Expertise', icon: Palette },
+  { name: 'JavaScript', level: 97, category: 'Frontend', badge: 'Expertise', icon: Braces },
+  { name: 'Python', level: 94, category: 'Backend / AI', badge: 'Expertise', icon: Terminal },
+  { name: 'React & Next.js', level: 96, category: 'Frontend', icon: Atom },
+  { name: 'TypeScript', level: 95, category: 'Frontend', icon: FileCode },
+  { name: 'Tailwind CSS & Radix UI', level: 94, category: 'UI / UX', icon: Layers },
+  { name: 'AI APIs & Streaming', level: 92, category: 'AI Engineering', icon: Cpu },
+  { name: 'Wagmi & Viem (Web3)', level: 92, category: 'Web3', icon: LinkIcon },
+  { name: 'Node.js & Supabase', level: 88, category: 'Backend', icon: Server },
 ]
 
 export function SkillMeters() {
@@ -56,10 +75,21 @@ export function SkillMeters() {
               onMouseLeave={() => setHoveredSkill(null)}
               className="group/skill cursor-pointer touch-manipulation select-none"
             >
-              <div className="flex justify-between items-center mb-1.5 sm:mb-2">
-                <div>
-                  <p className="text-xs sm:text-sm font-semibold text-white">{skill.name}</p>
-                  <p className="text-[10px] sm:text-xs text-gray-500">{skill.category}</p>
+              <div className="flex justify-between items-center mb-1.5 sm:mb-2 gap-2">
+                <div className="flex items-center gap-2 flex-wrap min-w-0">
+                  {skill.icon && <skill.icon className="w-4 h-4 text-cyan-400 shrink-0" />}
+                  <div>
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <p className="text-xs sm:text-sm font-semibold text-white">{skill.name}</p>
+                      {skill.badge && (
+                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-medium tracking-wide uppercase bg-cyan-400/10 text-cyan-300 border border-cyan-400/30">
+                          <span className="w-1 h-1 rounded-full bg-cyan-400 animate-pulse" />
+                          {skill.badge}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-[10px] sm:text-xs text-gray-500">{skill.category}</p>
+                  </div>
                 </div>
                 <motion.span
                   animate={{
